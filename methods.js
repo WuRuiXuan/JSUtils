@@ -134,11 +134,12 @@ exports.blobSlice = function (blob, startByte, length) {
  * 模拟setInterval
  * @param method 执行函数
  * @param scope 函数的作用域
+ * @param interval 执行间隔ms
  */
-exports.simulateInterval = function (method, scope) {
+exports.simulateInterval = function (method, scope, interval) {
     clearTimeout(method.tId);
     method.call(scope);
-    method.tId = setTimeout(arguments.callee.bind(null, method, scope), 1000);
+    method.tId = setTimeout(arguments.callee.bind(null, method, scope), interval);
 };
 
 /**
