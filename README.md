@@ -1,5 +1,4 @@
-# JSUtils
-## JS工具类，适配大部分浏览器
+# JSUtils（适配大部分浏览器）
 DOM工具类 - DOMUtil <br/>
 Event工具类 - EventUtil <br/>
 Form工具类 - FormUtil <br/>
